@@ -53,7 +53,7 @@ public filterdata="";
     this.router.navigate(['add-user-component']);
   }
   deleteUser(id:any){
-    this.users.splice(id-1,1)
+    
     this.UsersData.DeleteUser(id).subscribe((result)=>{
       console.warn("result",result)
     })
